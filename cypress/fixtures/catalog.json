@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "id": "mock-201",
+      "title": "Mocked VR Concert",
+      "category": "Music",
+      "status": "online",
+      "quality": "8K",
+      "viewers": 5000
+    }
+  ],
+  "total": 1
+}

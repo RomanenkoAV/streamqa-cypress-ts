@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamQA Demo</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel login-panel" data-testid="login-panel">
+        <p class="eyebrow">B2B VR streaming platform</p>
+        <h1>StreamQA Demo</h1>
+        <p class="description">A local product stub for UI and API automation practice.</p>
+
+        <form data-testid="login-form">
+          <label>
+            Email
+            <input data-testid="email-input" type="email" autocomplete="username" />
+          </label>
+          <label>
+            Password
+            <input data-testid="password-input" type="password" autocomplete="current-password" />
+          </label>
+          <button data-testid="login-button" type="submit">Sign in</button>
+          <p class="message error" data-testid="login-error" hidden></p>
+        </form>
+      </section>
+
+      <section class="panel catalog-panel" data-testid="catalog-panel" hidden>
+        <header class="catalog-header">
+          <div>
+            <p class="eyebrow">Partner dashboard</p>
+            <h2 data-testid="welcome-title">Streams</h2>
+          </div>
+          <button class="secondary" data-testid="logout-button" type="button">Log out</button>
+        </header>
+
+        <div class="toolbar">
+          <input data-testid="search-input" type="search" placeholder="Search streams" />
+          <select data-testid="status-filter">
+            <option value="">All statuses</option>
+            <option value="online">Online</option>
+            <option value="maintenance">Maintenance</option>
+          </select>
+          <button data-testid="refresh-button" type="button">Refresh</button>
+        </div>
+
+        <p data-testid="catalog-loading" hidden>Loading streams...</p>
+        <p class="message error" data-testid="catalog-error" hidden></p>
+        <p data-testid="empty-state" hidden>No streams found</p>
+        <div class="cards" data-testid="stream-list"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

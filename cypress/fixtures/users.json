@@ -1,0 +1,10 @@
+{
+  "valid": {
+    "email": "qa@stream.local",
+    "password": "Qwerty123!"
+  },
+  "invalid": {
+    "email": "wrong@stream.local",
+    "password": "wrong-password"
+  }
+}
